@@ -61,7 +61,7 @@ class HomeController extends GetxController {
                       style: const TextStyle(color: Colors.lime),
                     ),
                     subtitle: Text(
-                      "Rp ${e.cost![0].value} --- Estimasi ${e.cost![0].etd} Hari",
+                      "Rp ${e.cost![0].value} --- Estimasi ${e.cost![0].etd!.replaceAll("HARI", "")} Hari",
                       style: const TextStyle(color: Colors.lime),
                     ),
                   ),
